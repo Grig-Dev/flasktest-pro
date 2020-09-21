@@ -11,5 +11,9 @@ def hello():
 def hello_name(name):
     return "Hello {}!".format(name)
 
+@app.route('/<lastname>')
+def hello_lastname(lastname):
+    return "Hello {}!".format(lastname)
+
 if __name__ == '__main__':
     app.run()
